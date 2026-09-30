@@ -1,0 +1,52 @@
+{
+    "dataset": {
+        "total_samples": 25200,
+        "n_features": 217,
+        "n_classes": 8,
+        "train_size": 24000,
+        "test_size": 1200
+    },
+    "random_forest": {
+        "best_params": {
+            "n_estimators": 300,
+            "min_samples_split": 5,
+            "min_samples_leaf": 2,
+            "max_features": "sqrt",
+            "max_depth": 30
+        },
+        "cv_accuracy_mean": 0.96275,
+        "cv_accuracy_std": 0.003419206373154753,
+        "test_accuracy": 0.8858333333333334,
+        "test_precision": 0.8883439624210536,
+        "test_recall": 0.8858333333333334,
+        "test_f1": 0.8858384860685168,
+        "training_time": 20.48440432548523,
+        "inference_time_ms": 0.07613142331441243,
+        "model_size_mb": 117.12295341491699
+    },
+    "xgboost": {
+        "best_params": {
+            "subsample": 0.7,
+            "reg_lambda": 1,
+            "reg_alpha": 0,
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.1,
+            "colsample_bytree": 0.7
+        },
+        "cv_accuracy_mean": 0.9818749999999999,
+        "cv_accuracy_std": 0.0013043729868748544,
+        "test_accuracy": 0.9116666666666666,
+        "test_precision": 0.9148633352687046,
+        "test_recall": 0.9116666666666666,
+        "test_f1": 0.9122630999971784,
+        "training_time": 18.783977270126343,
+        "inference_time_ms": 0.1263574759165446,
+        "model_size_mb": 6.584610939025879
+    },
+    "statistical_testing": {
+        "t_statistic": -14.108058582170676,
+        "p_value": 0.00014651226951076688,
+        "significant": true
+    }
+}
